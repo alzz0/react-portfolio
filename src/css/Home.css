@@ -1,0 +1,252 @@
+body {
+  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+section {
+  width: 100%;
+  padding: 0 7%;
+  display: table;
+  margin: 0;
+  max-width: none;
+  background-image: url("../images/background.jpg");
+  /*   background: linear-gradient(to bottom, #f8f9fa 13%, #00b7ff 100%);*/
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  height: 100vh;
+
+  &:nth-of-type(2n) {
+    background-color: #f8f9fa;
+  }
+}
+
+#landing-header {
+  text-align: center;
+  z-index: 10;
+  position: relative;
+  padding-top: 40vh;
+}
+
+#landing-header h1 {
+  color: white;
+}
+
+section2 {
+  width: 100%;
+  padding: 0 7%;
+  display: table;
+  margin: 0;
+  max-width: none;
+  background-color: #f8f9fa;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  height: 100vh;
+}
+
+/*
+section3 {
+  width: 100%;
+  padding: 0 7%;
+  display: table;
+  margin: 0;
+  max-width: none;
+  background-color: #323232;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  height: 100vh;
+}
+*/
+
+#left {
+  position: relative;
+  width: 50%;
+  background: #fff;
+  float: left;
+  height: 100vh;
+}
+#right {
+  position: relative;
+  width: 50%;
+  background: #00b7ff;
+  float: right;
+  height: 100vh;
+}
+
+@media only screen and (max-width: 800px) {
+  #right {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  #left {
+    width: 100%;
+  }
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 300;
+  color: #777;
+}
+
+h1 span {
+  font-weight: 600;
+}
+
+.container1 {
+  width: 80%;
+  padding: 50px 0;
+  margin: 50px auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.container1:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -1px;
+  width: 2px;
+  height: 100%;
+  background: #ccd1d9;
+  z-index: 1;
+}
+
+.timeline-block {
+  width: -webkit-calc(50% + 8px);
+  width: -moz-calc(50% + 8px);
+  width: calc(50% + 8px);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-box-pack: justify;
+  justify-content: space-between;
+  clear: both;
+}
+
+.timeline-block-right {
+  float: right;
+}
+
+.timeline-block-left {
+  float: left;
+  direction: rtl;
+}
+
+.marker {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid #f5f7fa;
+  background: #4fc1e9;
+  margin-top: 10px;
+  z-index: 9999;
+}
+
+.timeline-content {
+  width: 95%;
+  padding: 0 15px;
+  color: #666;
+}
+
+.timeline-content h3 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.timeline-content span {
+  font-size: 15px;
+  color: #a4a4a4;
+}
+
+.timeline-content p {
+  font-size: 14px;
+  line-height: 1.5em;
+  word-spacing: 1px;
+  color: #888;
+}
+
+@media screen and (max-width: 768px) {
+  .container:before,
+  .container1:before {
+    left: 8px;
+    width: 2px;
+  }
+  .timeline-block {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .timeline-block-right {
+    float: none;
+  }
+
+  .timeline-block-left {
+    float: none;
+    direction: ltr;
+  }
+}
+
+#box1 {
+  border: 15px solid #00b7ff;
+  display: block;
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  width: 50%;
+  height: 50%;
+  vertical-align: middle;
+  text-align: center;
+}
+
+#box1 h1 {
+  color: #00b7ff;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+}
+
+#box2 {
+  border: 15px solid #fff;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  width: 50%;
+  height: 50%;
+
+  vertical-align: middle;
+  text-align: center;
+}
+
+#box2 h1 {
+  color: #fff;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+}
+
+@media only screen and (max-width: 500px) {
+  #landing-header {
+    padding-top: 10vh;
+  }
+}
