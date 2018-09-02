@@ -33,7 +33,7 @@ class NavBar extends React.Component {
           color="light"
           light
           expand="md"
-          style={{ paddingTop: "15px", paddingBottom: "15px" }}
+          style={{ paddingTop: "15px", paddingBottom: "15px"}}
         >
           <NavbarBrand>
             <Link

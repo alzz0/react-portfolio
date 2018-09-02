@@ -41,7 +41,7 @@ class Home extends Component {
           <div className="content">
             <div id="landing-header">
         
-        <h1 style={{ fontSize: "40px", textAlign: "left" }}>
+        <h1 style={{ fontSize: "40px", textAlign: "left"}}>
               <Typist>
   <span>Hello, my name is <span style={{color:"#33c5ff"}}>Ali Mansour</span>. I am awesome.</span>
   <Typist.Backspace count={8} delay={200} />

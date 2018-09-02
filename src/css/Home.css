@@ -8,14 +8,14 @@ section {
   margin: 0;
   max-width: none;
   background-image: url("../images/background.jpg");
-  /*   background: linear-gradient(to bottom, #f8f9fa 13%, #00b7ff 100%);*/
+
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   height: 100vh;
 
   &:nth-of-type(2n) {
-    background-color: #f8f9fa;
+    background-color: rgba(248, 249, 250, 0);
   }
 }
 
