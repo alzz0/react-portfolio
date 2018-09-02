@@ -5,6 +5,7 @@ import jslogo from "../images/jslogo.png"
 import reactlogo from "../images/reactlogo.png"
 import reduxlogo from "../images/reduxlogo.png"
 import { Link } from "react-router-dom";
+import Typist from "react-typist";
 import {
   Container,
   Row,
@@ -39,12 +40,23 @@ class Home extends Component {
         <section>
           <div className="content">
             <div id="landing-header">
-              <Fade left>
-                <h1 style={{ fontSize: "50px", textAlign: "left" }}>
-                  Web Developer & <br />
-                  <span>Entrepreneur</span>
-                </h1>
-              </Fade>
+        
+        <h1 style={{ fontSize: "40px", textAlign: "left" }}>
+              <Typist>
+  <span>Hello, my name is <span style={{color:"#33c5ff"}}>Ali Mansour</span>. I am awesome.</span>
+  <Typist.Backspace count={8} delay={200} />
+  <span>a Web Developer & 
+Entrepreneur.</span>
+
+  
+</Typist></h1>
+
+
+        
+        
+              
+                
+              
               <Fade right>
                 <div style={{ paddingTop: "20vh" }}>
                   <img

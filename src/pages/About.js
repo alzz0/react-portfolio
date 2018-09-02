@@ -48,10 +48,8 @@ class About extends React.Component {
               
               <Container fluid>
         
-                <h1 className="display-5">Hello, my name         <Typist>
-  <span>Jeff</span>
-  <Typist.Backspace count={8} delay={900} />
-  <span> is Ali Mansour </span>
+                <h1 className="display-5"> Hello, my name is <Typist>Ali Mansour 
+ 
 </Typist></h1>
         
         
