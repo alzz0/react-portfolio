@@ -68,7 +68,7 @@ class ServerWork extends React.Component {
                     <div style={backgroundStyle}>
                       <CardTitle style={cardText}>Gym Confessions</CardTitle>
                       <CardText style={cardText}>
-                        Full stack web app. Authentication and authorization
+                        Full stack web app with Authentication and authorization.
                       </CardText>{" "}
                     </div>
                   </CardImgOverlay>
@@ -93,8 +93,8 @@ class ServerWork extends React.Component {
                         VogelKop (Twitter Clone)
                       </CardTitle>
                       <CardText style={cardText}>
-                        Full stack Web app connected to Redux. Authentication
-                        and authorization.
+                        Full stack Web app connected to Redux with Authentication
+                          and authorization.
                       </CardText>
                     </div>
                   </CardImgOverlay>
@@ -115,7 +115,7 @@ class ServerWork extends React.Component {
                     <div style={backgroundStyle}>
                       <CardTitle style={cardText}>React Todo App</CardTitle>
                       <CardText style={cardText}>
-                        Todo list connected to express and a database
+                        Todo list connected to express and a database.
                       </CardText>
                     </div>
                   </CardImgOverlay>

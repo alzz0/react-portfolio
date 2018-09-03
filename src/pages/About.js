@@ -59,7 +59,7 @@ class About extends React.Component {
                   I am a Full Stack Web Developer and UI/UX Javascript
                   specialist. Born and raised in the capital of Alberta, Canada.
                   Check out my social media accounts or my React.JS UI
-                  components at Github . Feel free to take a look at my latest
+                  components at Github. Feel free to take a look at my latest
                   projects on the My Work page. I am very passionate on my work
                   and I capitilize my passion!
                 </p>

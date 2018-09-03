@@ -61,7 +61,7 @@ class Contact extends React.Component {
             </p>
             <hr className="my-2" />
             <p>
-              Click or tap one of the buttons below on your preferences of
+              Click or tap one of the tabs below on your preferences of
               communication.
             </p>
             <Nav tabs>

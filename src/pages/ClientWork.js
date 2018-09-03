@@ -67,7 +67,7 @@ class ClientWork extends React.Component {
                       <div style={backgroundStyle}>
                         <CardTitle style={cardText}>Gym Confessions</CardTitle>
                         <CardText style={cardText}>
-                          Full stack web app. Authentication and authorization
+                          Full stack web app with Authentication and authorization.
                         </CardText>
                       </div>
                     </CardImgOverlay>
@@ -91,7 +91,7 @@ class ClientWork extends React.Component {
                           VogelKop (Twitter Clone)
                         </CardTitle>
                         <CardText style={cardText}>
-                          Full stack Web app connected to Redux. Authentication
+                          Full stack Web app connected to Redux with Authentication
                           and authorization.
                         </CardText>
                       </div>
@@ -113,8 +113,8 @@ class ClientWork extends React.Component {
                     <div style={backgroundStyle}>
                       <CardTitle style={cardText}>React Weaher App</CardTitle>
                       <CardText style={cardText}>
-                        Weather App connected to an Api brining you your
-                        currenct weather information
+                        Weather App connected to an Api bringing you your
+                        currenct weather information.
                       </CardText>
                     </div>
                   </CardImgOverlay>
@@ -135,7 +135,7 @@ class ClientWork extends React.Component {
                     <div style={backgroundStyle}>
                       <CardTitle style={cardText}>React Todo App</CardTitle>
                       <CardText style={cardText}>
-                        Todo list connected to express and a database
+                        Todo list connected to express and a database.
                       </CardText>
                     </div>
                   </CardImgOverlay>
@@ -154,8 +154,8 @@ class ClientWork extends React.Component {
                   <CardImgOverlay>
                     <div style={backgroundStyle}>
                       <CardTitle style={cardText}>React Recipe App</CardTitle>
-                      <CardText style={cardText}>
-                        One input, dozens of recipes.
+                      <CardText style={cardText}>One input, dozens of recipes. Recipe app fetching your recipe input from an api.
+                        
                       </CardText>
                     </div>
                   </CardImgOverlay>
