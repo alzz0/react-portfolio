@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 import Pulse from "react-reveal/Pulse";
 import WorkFooter from "../components/WorkFooter";
+import gymImage from "../images/gym.jpeg"
+import twitterImage from "../images/twitter1.png"
+import todoImage from "../images/todo.jpg"
 import "../css/Work.css";
 import {
   Card,
@@ -47,14 +50,18 @@ class ServerWork extends React.Component {
         <Container>
           <Row>
             <Col xs="12" sm="6" lg="4">
-              <a href="http://google.ca" target="_blank>">
+              <a
+                href="https://newappnamegymconfessions.herokuapp.com/"
+                target="_blank>">
+        <Pulse>
+              
                 <Card style={{ border: "none" }}>
                   <CardImg
                     body
                     inverse
                     style={imgStyle}
                     width="100%"
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSei4Rz8MO3GboDBHIMoklz7-SFUjLklMnTGk8zjkWImiNO9w8bMQ"
+                    src={gymImage}
                     alt="Card image cap"
                   />
                   <CardImgOverlay>
@@ -65,16 +72,19 @@ class ServerWork extends React.Component {
                       </CardText>{" "}
                     </div>
                   </CardImgOverlay>
-                </Card>
+                </Card></Pulse>
               </a>
             </Col>
             <Col xs="12" sm="6" lg="4">
-              <a href="http://google.ca" target="_blank>">
+              <a
+                href="https://github.com/alzz0/Vogelkop-twitter-clone"
+                target="_blank>"
+              ><Pulse>
                 <Card style={{ border: "none" }}>
                   <CardImg
                     style={imgStyle}
                     width="100%"
-                    src="http://www.alter-net.info/twitter_newbird_boxed_whiteonblue.png/image"
+                    src={twitterImage}
                     alt="Card image cap"
                   />
                   <CardImgOverlay>
@@ -84,72 +94,34 @@ class ServerWork extends React.Component {
                       </CardTitle>
                       <CardText style={cardText}>
                         Full stack Web app connected to Redux. Authentication
-                        and authorization.{" "}
+                        and authorization.
                       </CardText>
                     </div>
                   </CardImgOverlay>
-                </Card>
+                </Card></Pulse>
               </a>
             </Col>
+
             <Col xs="12" sm="6" lg="4">
-              <a href="http://google.ca" target="_blank>">
+              <a href="https://github.com/alzz0/mern-api-todo" target="_blank>">
+                  <Pulse>
                 <Card style={{ border: "none" }}>
                   <CardImg
                     style={imgStyle}
                     width="100%"
-                    src="https://www.sketchappsources.com/resources/source-image/weather-app-icons.jpg"
+                    src={todoImage}
                   />
                   <CardImgOverlay>
                     <div style={backgroundStyle}>
-                      <CardTitle style={cardText}>React Weaher App</CardTitle>
-                      <CardText style={cardText}>
-                        Weather App connected to an Api brining you your
-                        currenct weather information
-                      </CardText>
-                    </div>
-                  </CardImgOverlay>
-                </Card>
-              </a>
-            </Col>
-            <Col xs="12" sm="6" lg="4">
-              <a href="http://google.ca" target="_blank>">
-                <Card style={{ border: "none" }}>
-                  <CardImg
-                    style={imgStyle}
-                    width="100%"
-                    src="https://banner2.kisspng.com/20180809/uyq/kisspng-calendar-date-iconfinder-scalable-vector-graphics-calendar-date-event-month-todo-check-svg-png-icon-5b6c65a1f07792.060592131533830561985.jpg"
-                  />
-                  <CardImgOverlay>
-                    <div style={backgroundStyle}>
-                      <CardTitle style={cardText}>React Weaher App</CardTitle>
+                      <CardTitle style={cardText}>React Todo App</CardTitle>
                       <CardText style={cardText}>
                         Todo list connected to express and a database
                       </CardText>
                     </div>
                   </CardImgOverlay>
-                </Card>
+                </Card></Pulse>
               </a>
             </Col>
-            <Col xs="12" sm="6" lg="4">
-              <a href="http://google.ca" target="_blank>">
-                <Card style={{ border: "none" }}>
-                  <CardImg
-                    style={imgStyle}
-                    width="100%"
-                    src="https://imagesvc.timeincapp.com/v3/mm/image?url=https%3A%2F%2Fcdn-image.myrecipes.com%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmedium_2x%2Fpublic%2Fimage%2Frecipes%2Fck%2F11%2F04%2Ffettuccine-olive-oil-ck-x.jpg%3Fitok%3Dbt5Cny7R&w=700&q=85"
-                  />
-                  <CardImgOverlay>
-                    <div style={backgroundStyle}>
-                      <CardTitle style={cardText}>React Recipe App</CardTitle>
-                      <CardText style={cardText}>
-                        One input, dozens of recipes.
-                      </CardText>
-                    </div>
-                  </CardImgOverlay>
-                </Card>
-              </a>
-            </Col>
-            <Col />
           </Row>
           <WorkFooter />
         </Container>
