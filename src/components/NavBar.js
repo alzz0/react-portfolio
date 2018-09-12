@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import logo from "../images/alim.png"
+import logo from "../images/alim.png";
 
 import {
   Collapse,
@@ -34,7 +34,7 @@ class NavBar extends React.Component {
           color="light"
           light
           expand="md"
-          style={{ paddingTop: "15px", paddingBottom: "15px"}}
+          style={{ paddingTop: "15px", paddingBottom: "15px" }}
         >
           <NavbarBrand>
             <Link
@@ -45,7 +45,7 @@ class NavBar extends React.Component {
                 fontSize: "35px"
               }}
             >
-              <img src={logo}/>
+              <img src={logo} />
             </Link>
           </NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
