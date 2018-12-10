@@ -7,6 +7,7 @@ import twitterImage from "../images/twitter1.png";
 import weatherImage from "../images/weather.jpg";
 import todoImage from "../images/todo.jpg";
 import lyricImage from "../images/lyric.jpg";
+import planImage from "../images/plan.png";
 import "../css/Work.css";
 
 import {
@@ -52,6 +53,57 @@ class ClientWork extends React.Component {
 
         <Container>
           <Row>
+            <Col xs="12" sm="6" lg="4">
+              <a href="https://planner-d58a1.firebaseapp.com/" target="_blank>">
+                <Pulse>
+                  <Card style={{ border: "none" }}>
+                    <CardImg
+                      body
+                      inverse
+                      style={imgStyle}
+                      width="100%"
+                      src={planImage}
+                      alt="Card image cap"
+                    />
+                    <CardImgOverlay>
+                      <div style={backgroundStyle}>
+                        <CardTitle style={cardText}>Group Planner</CardTitle>
+                        <CardText style={cardText}>
+                          Full stack web app using React.js Redux on the client
+                          side and Firebase DB, Firebase Auth, Cloud Functions
+                          on server side.
+                        </CardText>
+                      </div>
+                    </CardImgOverlay>
+                  </Card>
+                </Pulse>
+              </a>
+            </Col>
+
+            <Col xs="12" sm="6" lg="4">
+              <a href="https://lyricsearch.herokuapp.com/" target="_blank>">
+                <Pulse>
+                  <Card style={{ border: "none" }}>
+                    <CardImg
+                      style={imgStyle}
+                      width="100%"
+                      src={lyricImage}
+                      alt="Card image cap"
+                    />
+                    <CardImgOverlay>
+                      <div style={backgroundStyle}>
+                        <CardTitle style={cardText}>Lyric Search</CardTitle>
+                        <CardText style={cardText}>
+                          Search for your favorite song and get the lyrics,
+                          release date and more!
+                        </CardText>
+                      </div>
+                    </CardImgOverlay>
+                  </Card>
+                </Pulse>
+              </a>
+            </Col>
+
             <Col xs="12" sm="6" lg="4">
               <a
                 href="https://newappnamegymconfessions.herokuapp.com/posts"
@@ -101,30 +153,6 @@ class ClientWork extends React.Component {
                         <CardText style={cardText}>
                           Full stack Web app connected to Redux with
                           Authentication and authorization.
-                        </CardText>
-                      </div>
-                    </CardImgOverlay>
-                  </Card>
-                </Pulse>
-              </a>
-            </Col>
-
-            <Col xs="12" sm="6" lg="4">
-              <a href="https://lyricsearch.herokuapp.com/" target="_blank>">
-                <Pulse>
-                  <Card style={{ border: "none" }}>
-                    <CardImg
-                      style={imgStyle}
-                      width="100%"
-                      src={lyricImage}
-                      alt="Card image cap"
-                    />
-                    <CardImgOverlay>
-                      <div style={backgroundStyle}>
-                        <CardTitle style={cardText}>Lyric Search</CardTitle>
-                        <CardText style={cardText}>
-                          Search for your favorite song and get the lyrics,
-                          release date and more!
                         </CardText>
                       </div>
                     </CardImgOverlay>
