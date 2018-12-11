@@ -1,11 +1,12 @@
 import React, { Component } from "react";
 import Zoom from "react-reveal/Zoom";
 import Fade from "react-reveal/Fade";
-import jslogo from "../images/jslogo.png"
-import reactlogo from "../images/reactlogo.png"
-import reduxlogo from "../images/reduxlogo.png"
+import jslogo from "../images/jslogo.png";
+import reactlogo from "../images/reactlogo.png";
+import reduxlogo from "../images/reduxlogo.png";
 import { Link } from "react-router-dom";
 import Typist from "react-typist";
+
 import {
   Container,
   Row,
@@ -31,32 +32,28 @@ const cardStyle = {
 };
 
 class Home extends Component {
-       componentDidMount() {
-    window.scrollTo(0,0);
-}
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
+
   render() {
     return (
       <div>
         <section>
           <div className="content">
             <div id="landing-header">
-        
-        <h1 style={{ fontSize: "40px", textAlign: "left"}}>
-              <Typist>
-  <span>Hello, my name is <span style={{color:"#33c5ff"}}>Ali Mansour</span>. I am awesome.</span>
-  <Typist.Backspace count={8} delay={200} />
-  <span>a Web Developer & 
-Entrepreneur.</span>
+              <h1 style={{ fontSize: "40px", textAlign: "left" }}>
+                <Typist>
+                  <span>
+                    Hello, my name is{" "}
+                    <span style={{ color: "#33c5ff" }}>Ali Mansour</span>. I am
+                    awesome.
+                  </span>
+                  <Typist.Backspace count={8} delay={200} />
+                  <span>a Web Developer & Entrepreneur.</span>
+                </Typist>
+              </h1>
 
-  
-</Typist></h1>
-
-
-        
-        
-              
-                
-              
               <Fade right>
                 <div style={{ paddingTop: "20vh" }}>
                   <img
@@ -86,12 +83,7 @@ Entrepreneur.</span>
             <Col xs="12" sm="4">
               <Card style={cardStyle}>
                 <Zoom>
-                  <CardImg
-                    top
-                    width="100%"
-                    src={reactlogo}
-                    alt="React.js"
-                  />
+                  <CardImg top width="100%" src={reactlogo} alt="React.js" />
                 </Zoom>
                 <CardBody>
                   <CardTitle>Client Side</CardTitle>
@@ -105,12 +97,7 @@ Entrepreneur.</span>
             <Col xs="12" sm="4">
               <Card style={cardStyle}>
                 <Zoom>
-                  <CardImg
-                    top
-                    width="100%"
-                    src={jslogo}
-                    alt="Node.js"
-                  />
+                  <CardImg top width="100%" src={jslogo} alt="Node.js" />
                 </Zoom>
                 <CardBody>
                   <CardTitle>Server Side</CardTitle>

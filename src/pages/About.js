@@ -1,5 +1,7 @@
 import React, { Component } from "react";
+import { Alert } from "reactstrap";
 import Typist from "react-typist";
+import { Link } from "react-router-dom";
 import {
   Jumbotron,
   Container,
@@ -33,28 +35,28 @@ const spanStyle = {
   fontSize: "18px"
 };
 class About extends React.Component {
+  state = {
+    visible: true
+  };
+
+  onDismiss = () => {
+    this.setState({ visible: false });
+  };
   componentDidMount() {
     window.scrollTo(0, 0);
   }
   render() {
     return (
       <div>
-        
         <aboutSection>
-        
           <div id="aboutHeader">
-        
             <Jumbotron fluid style={{ backgroundColor: "#2f2f2f" }}>
-              
               <Container fluid>
-        
-                <h1 className="display-5"> Hello, my name is <Typist>Ali Mansour 
- 
-</Typist></h1>
-        
-        
-        
-        
+                <h1 className="display-5">
+                  {" "}
+                  Hello, my name is <Typist>Ali Mansour</Typist>
+                </h1>
+
                 <p className="lead">
                   I am a Full Stack Web Developer and UI/UX Javascript
                   specialist. Born and raised in the capital of Alberta, Canada.
@@ -70,6 +72,19 @@ class About extends React.Component {
 
         <aboutSection3>
           <Container>
+            <Alert
+              style={{ margin: "0", textAlign: "center" }}
+              color="info"
+              isOpen={this.state.visible}
+              toggle={this.onDismiss}
+            >
+              <Link
+                to={"/client"}
+                style={{ textDecoration: "none", color: "#212121" }}
+              >
+                Cick me to to view a taste of my projects.
+              </Link>
+            </Alert>
             <Row>
               <Jumbotron fluid style={{ background: "none" }}>
                 <Container fluid>
@@ -158,9 +173,6 @@ class About extends React.Component {
             </Row>
           </Container>
         </aboutSection2>
-        
-        
-
       </div>
     );
   }
