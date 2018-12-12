@@ -103,7 +103,7 @@ class Home extends Component {
                   <CardTitle>Server Side</CardTitle>
                   <CardSubtitle>Node.js</CardSubtitle>
                   <CardText>
-                    Node.js, Express.js, MongoDB, Mongoose, Passport.js.
+                    Node.js, Express.js, MongoDB, Mongoose, Firebase.
                   </CardText>
                 </CardBody>
               </Card>
@@ -122,8 +122,8 @@ class Home extends Component {
                   <CardTitle>Other Technologies</CardTitle>
                   <CardSubtitle>miscellaneous</CardSubtitle>
                   <CardText>
-                    Bootstrap, Reactstrap EJS, Semantic UI, Git, GitHub, HTML5,
-                    CSS3, NPM, Ajax, Scss.
+                    Bootstrap, Materializecss, EJS, Semantic UI, Git, GitHub,
+                    HTML5, CSS3, NPM, Ajax, Scss.
                   </CardText>
                 </CardBody>
               </Card>

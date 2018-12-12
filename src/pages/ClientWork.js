@@ -69,7 +69,7 @@ class ClientWork extends React.Component {
                       <div style={backgroundStyle}>
                         <CardTitle style={cardText}>Group Planner</CardTitle>
                         <CardText style={cardText}>
-                          Full stack web app using React.js Redux on the client
+                          Full stack web app using React.js, Redux on the client
                           side and Firebase DB, Firebase Auth, Cloud Functions
                           on server side.
                         </CardText>
