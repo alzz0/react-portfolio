@@ -41,7 +41,7 @@ class Home extends Component {
               <h1 style={{ fontSize: "40px", textAlign: "left" }}>
                 <Typist>
                   <span>
-                    Hello, my name is
+                    Hello, my name is{" "}
                     <span style={{ color: "#33c5ff" }}>Ali Mansour</span>. I am
                     awesome.
                   </span>
