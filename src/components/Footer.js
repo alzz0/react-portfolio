@@ -6,7 +6,7 @@ import linkedin from "../images/linkedin.png";
 import twitter from "../images/twitter.png";
 import github from "../images/github.png";
 
-class Footer extends React.Component {
+class Footer extends Component {
   render() {
     return (
       <div className="footerStyle">

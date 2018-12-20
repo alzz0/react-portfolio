@@ -33,7 +33,7 @@ const cardText = {
 const backgroundStyle = {
   backgroundColor: "rgba(0, 0, 0, 0.7)"
 };
-class ClientWork extends React.Component {
+class ClientWork extends Component {
   componentDidMount() {
     window.scrollTo(0, 0);
   }

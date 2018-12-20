@@ -5,7 +5,7 @@ const footerStyle = {
   margin: "10vh auto",
   maxWidth: "380px"
 };
-class WorkFooter extends React.Component {
+class WorkFooter extends Component {
   render() {
     return (
       <div style={footerStyle}>

@@ -10,7 +10,6 @@ import {
   Button,
   CardTitle,
   CardText,
-  Container,
   Row,
   Col
 } from "reactstrap";
@@ -33,7 +32,7 @@ const cardStyle = {
   background: "none",
   border: "none"
 };
-class Contact extends React.Component {
+class Contact extends Component {
   componentDidMount() {
     window.scrollTo(0, 0);
   }
@@ -136,8 +135,11 @@ class Contact extends React.Component {
                         response feel free to check out what I have been up too
                         on my casual time.
                       </CardText>
-                      <a href="https://twitter.com/AliMansour0" target="_blank">
-                        {" "}
+                      <a
+                        href="https://twitter.com/AliMansour0"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                      >
                         <Button style={{ backgroundColor: "#1DA1F2" }}>
                           Take me there!
                         </Button>
@@ -156,6 +158,7 @@ class Contact extends React.Component {
                       <a
                         href="https://www.linkedin.com/in/ali-mansour-99402a126/"
                         target="_blank"
+                        rel="noopener noreferrer"
                       >
                         <Button style={{ backgroundColor: "#0077B5" }}>
                           Take me there!

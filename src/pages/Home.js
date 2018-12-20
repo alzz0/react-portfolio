@@ -16,11 +16,7 @@ import {
   CardText,
   CardBody,
   CardTitle,
-  CardSubtitle,
-  Button,
-  Badge,
-  Media,
-  Jumbotron
+  CardSubtitle
 } from "reactstrap";
 import "../css/Home.css";
 
@@ -45,7 +41,7 @@ class Home extends Component {
               <h1 style={{ fontSize: "40px", textAlign: "left" }}>
                 <Typist>
                   <span>
-                    Hello, my name is{" "}
+                    Hello, my name is
                     <span style={{ color: "#33c5ff" }}>Ali Mansour</span>. I am
                     awesome.
                   </span>
@@ -59,6 +55,7 @@ class Home extends Component {
                   <img
                     style={{ width: "30px" }}
                     src="http://driesvanbroeck.be/wp-content/themes/driesvanbroeck/assets/content/scroll.svg"
+                    alt="web developer"
                   />
 
                   <h5 style={{ color: "white" }}>Scroll To See More</h5>

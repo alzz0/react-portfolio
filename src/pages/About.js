@@ -9,8 +9,7 @@ import {
   Col,
   Card,
   CardTitle,
-  CardText,
-  Badge
+  CardText
 } from "reactstrap";
 import "../css/About.css";
 
@@ -31,10 +30,11 @@ const h1Span = {
   color: "#444"
 };
 
-const spanStyle = {
-  fontSize: "18px"
-};
-class About extends React.Component {
+//const spanStyle = {
+//  fontSize: "18px"
+//};
+
+class About extends Component {
   state = {
     visible: true
   };

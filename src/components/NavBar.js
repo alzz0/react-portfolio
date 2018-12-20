@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import {  Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import logo from "../images/alim.png";
 
 import {
@@ -16,7 +16,7 @@ import {
   DropdownItem
 } from "reactstrap";
 
-class NavBar extends React.Component {
+class NavBar extends Component {
   state = {
     isOpen: false
   };
@@ -45,7 +45,7 @@ class NavBar extends React.Component {
                 fontSize: "35px"
               }}
             >
-              <img src={logo} />
+              <img src={logo} alt="logo" />
             </Link>
           </NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
