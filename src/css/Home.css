@@ -7,7 +7,7 @@ section {
   display: table;
   margin: 0;
   max-width: none;
-  background-image: url("../images/background.jpg");
+  background: linear-gradient(89deg, #ff5edf 0%, #04c8de 100%);
 
   background-size: cover;
   background-repeat: no-repeat;
