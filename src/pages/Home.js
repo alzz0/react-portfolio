@@ -6,7 +6,6 @@ import reactlogo from "../images/reactlogo.png";
 import reduxlogo from "../images/reduxlogo.png";
 import { Link } from "react-router-dom";
 import Typist from "react-typist";
-import Particles from 'react-particles-js';
 
 import {
   Container,
@@ -21,8 +20,6 @@ import {
 } from "reactstrap";
 import "../css/Home.css";
 
-
-
 const cardStyle = {
   border: "none",
   maxWidth: "200px",
@@ -30,32 +27,16 @@ const cardStyle = {
   margin: "0 auto"
 };
 
-    const particlesOptions = {
-  particles: {
-    number: {
-      value: 110,
-      density: {
-        enable: true,
-        value_area: 800
-      }
-    }
-  }
-}
-
 class Home extends Component {
   componentDidMount() {
     window.scrollTo(0, 0);
   }
 
-    
-
   render() {
     return (
       <div>
         <section>
-        
           <div className="content">
-        
             <div id="landing-header">
               <h1 style={{ fontSize: "40px", textAlign: "left" }}>
                 <Typist>
@@ -68,9 +49,7 @@ class Home extends Component {
                   <span>a Web Developer & Entrepreneur.</span>
                 </Typist>
               </h1>
- <Particles className='particles'
-          params={particlesOptions}
-        />
+
               <Fade right>
                 <div style={{ paddingTop: "20vh" }}>
                   <img
@@ -82,10 +61,8 @@ class Home extends Component {
                   <h5 style={{ color: "white" }}>Scroll To See More</h5>
                 </div>
               </Fade>
-        
             </div>
           </div>
-        
         </section>
         <Container>
           <h1
