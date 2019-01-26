@@ -197,13 +197,37 @@ class Home extends Component {
                 <div className="marker" />
                 <Zoom>
                   <div className="timeline-content">
-                    <h3>Today</h3>
-                    <span>2018...</span>
+                    <h3>Specializing</h3>
+                    <span>2018-2019</span>
                     <p>
-                      Today I am working on building big and complex web
+                      During 2018 I worked on building big and complex web
                       applications with React and Redux, fully connected to the
                       server side and making sure code quality and UI
                       presentation over exceeds industry standards.
+                    </p>
+                  </div>
+                </Zoom>
+              </div>
+
+              <div className="timeline-block timeline-block-left">
+                <div className="marker" />
+                <Zoom>
+                  <div className="timeline-content">
+                    <h3>The Big Move</h3>
+                    <span>1st Quarter of 2019</span>
+                    <p>
+                      Started the new year by traveling to the other side of the
+                      country to join the{" "}
+                      <a
+                        href="https://www.tranquility.app/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Tranquility Online
+                      </a>{" "}
+                      team (<span style={{fontStyle:"italic"}}>Amazing team</span>). Taking on a big
+                      responsability by creating their progessive web app mobile
+                      version and having it ready for production by May 1st
                     </p>
                   </div>
                 </Zoom>
