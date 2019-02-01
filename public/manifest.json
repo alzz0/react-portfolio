@@ -4,12 +4,12 @@
   "icons": [
     {
       "src": "alim.png",
-      "sizes": "64x64 32x32 24x24 16x16",
+      "sizes": "512x512",
       "type": "image/png"
     }
   ],
   "start_url": "/",
   "display": "standalone",
-  "theme_color": "##00b7ff",
-  "background_color": "##00b7ff"
+  "theme_color": "#00b7ff",
+  "background_color": "#00b7ff"
 }
