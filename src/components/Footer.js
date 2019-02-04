@@ -17,7 +17,7 @@ class Footer extends Component {
               <Col>
                 <a
                   href="https://www.linkedin.com/in/ali-mansour-99402a126/"
-                  target="_blank>"
+                  target="_blank> "rel="noopener"
                 >
                   <img
                     style={{ width: "30px" }}
@@ -27,14 +27,14 @@ class Footer extends Component {
                 </a>
               </Col>
               <Col>
-                <a href="https://github.com/alzz0" target="_blank>">
+                <a href="https://github.com/alzz0" target="_blank>" rel="noopener">
                   <img style={{ width: "30px" }} src={github} alt={"GitHub"} />
                 </a>
               </Col>
               <Col>
                 <a
                   href="https://twitter.com/AliMansour0?lang=en0"
-                  target="_blank>"
+                  target="_blank>" rel="noopener"
                 >
                   <img
                     style={{ width: "30px" }}

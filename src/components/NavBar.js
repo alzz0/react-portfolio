@@ -110,7 +110,7 @@ class NavBar extends Component {
                   </DropdownItem>
                   <DropdownItem divider />
                   <DropdownItem>
-                    <NavLink href="https://github.com/alzz0" target="_blank">
+                    <NavLink href="https://github.com/alzz0" target="_blank" rel="noopener">
                       GitHub
                     </NavLink>
                   </DropdownItem>

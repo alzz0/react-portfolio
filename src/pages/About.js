@@ -30,9 +30,7 @@ const h1Span = {
   color: "#444"
 };
 
-//const spanStyle = {
-//  fontSize: "18px"
-//};
+
 
 class About extends Component {
   state = {
