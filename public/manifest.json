@@ -6,6 +6,11 @@
       "src": "alim.png",
       "sizes": "512x512",
       "type": "image/png"
+    },
+      {  
+      "src": "alim.png",  
+      "sizes": "512x512",  
+      "type": "image/png"  
     }
   ],
   "start_url": "/",
