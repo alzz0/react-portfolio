@@ -46,7 +46,7 @@ class Home extends Component {
                     awesome.
                   </span>
                   <Typist.Backspace count={8} delay={200} />
-                  <span>a Web Developer & Entrepreneur.</span>
+                  <span>a Software Developer & Entrepreneur.</span>
                 </Typist>
               </h1>
 
