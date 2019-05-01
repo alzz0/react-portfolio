@@ -225,9 +225,11 @@ class Home extends Component {
                       >
                         Tranquility Online
                       </a>{" "}
-                      team (<span style={{fontStyle:"italic"}}>Amazing team</span>). Taking on a big
-                      responsability by creating their progessive web app mobile
-                      version and having it ready for production by May 1st
+                      team (<span style={{ fontStyle: "italic" }}>
+                        Amazing team
+                      </span>). Taking on a big responsability by creating their
+                      progessive web app mobile version and having it ready for
+                      production by May 31st
                     </p>
                   </div>
                 </Zoom>
