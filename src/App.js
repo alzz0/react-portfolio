@@ -80,6 +80,7 @@ class App extends Component {
                 <p>
                   Install this application on your home screen for quick and
                   easy access when you're on the go.
+                  I am a fully-fledged PWA
                 </p>
                 <span>
                   Just tap{" "}
