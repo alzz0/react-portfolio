@@ -1,0 +1,30 @@
+#pwaAlert {
+  margin: 0px auto;
+  text-align: center;
+  position: fixed;
+  bottom: 45px;
+  left: 0;
+  right: 0;
+  width: 98%;
+  padding: 16px;
+  z-index: 1;
+}
+
+#alertText {
+  padding-right: 20px !important;
+}
+
+#pwaDesktopAlert {
+  margin: 0px auto;
+  text-align: center;
+  position: fixed;
+  top: 110px;
+  right: 25px;
+  width: 300px;
+  padding: 16px;
+  z-index: 1;
+}
+
+#pwaDesktopAlert .close span {
+  position: fixed;
+}

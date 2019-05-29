@@ -36,6 +36,7 @@ class Home extends Component {
     return (
       <div>
         <section>
+          <span id="updatedOn" />
           <div className="content">
             <div id="landing-header">
               <h1 style={{ fontSize: "40px", textAlign: "left" }}>
@@ -49,18 +50,19 @@ class Home extends Component {
                   <span>a Software Developer & Entrepreneur.</span>
                 </Typist>
               </h1>
+              {this.props.pwaAlert ? null : (
+                <Fade right>
+                  <div style={{ paddingTop: "20vh" }}>
+                    <img
+                      style={{ width: "30px" }}
+                      src="http://driesvanbroeck.be/wp-content/themes/driesvanbroeck/assets/content/scroll.svg"
+                      alt="web developer"
+                    />
 
-              <Fade right>
-                <div style={{ paddingTop: "20vh" }}>
-                  <img
-                    style={{ width: "30px" }}
-                    src="http://driesvanbroeck.be/wp-content/themes/driesvanbroeck/assets/content/scroll.svg"
-                    alt="web developer"
-                  />
-
-                  <h5 style={{ color: "white" }}>Scroll To See More</h5>
-                </div>
-              </Fade>
+                    <h5 style={{ color: "white" }}>Scroll To See More</h5>
+                  </div>
+                </Fade>
+              )}
             </div>
           </div>
         </section>
@@ -225,9 +227,9 @@ class Home extends Component {
                       >
                         Tranquility Online
                       </a>{" "}
-                      team (<span style={{ fontStyle: "italic" }}>
-                        Amazing team
-                      </span>). Taking on a big responsability by creating their
+                      team (
+                      <span style={{ fontStyle: "italic" }}>Amazing team</span>
+                      ). Taking on a big responsability by creating their
                       progessive web app mobile version and having it ready for
                       production by May 31st
                     </p>

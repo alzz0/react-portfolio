@@ -18,7 +18,11 @@ section {
     background-color: rgba(248, 249, 250, 0);
   }
 }
-
+#updatedOn {
+  float: right;
+  color: #f3f3f3;
+  opacity: 0.9;
+}
 #landing-header {
   text-align: center;
   z-index: 10;

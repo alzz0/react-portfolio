@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Alert } from "reactstrap";
+
 import Typist from "react-typist";
 import { Link } from "react-router-dom";
 import {
@@ -76,12 +77,9 @@ class About extends Component {
               isOpen={this.state.visible}
               toggle={this.onDismiss}
             >
-              <Link
-                to={"/client"}
-                style={{ textDecoration: "none", color: "#212121" }}
-              >
-                Cick me to to view a taste of my projects.
-              </Link>
+            
+                Click me to to view a taste of my projects.
+              
             </Alert>
             <Row>
               <Jumbotron fluid style={{ background: "none" }}>
