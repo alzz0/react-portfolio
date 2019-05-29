@@ -32,7 +32,7 @@ class App extends Component {
     // Checks if should display install popup notification:
     if (isIos() && !isInStandaloneMode()) {
       this.setState({ showInstallMessage: true });
-      setTimeout(() => this.setState({ visible: true }), 50);
+      setTimeout(() => this.setState({ visible: true }), 6800);
     } else {
         setTimeout(()=>this.setState({showPwaMessage:true}),6800)
       
@@ -58,11 +58,10 @@ class App extends Component {
               toggle={this.onDismissDesk}
             >
               <span style={{ paddingTop: "32px" }}>
-                {" "}
-                Hey! Ali here... Bet you'd like to see a magic trick. Open me on
-                your phone for the next step
+                
+                Hello desktop user! I recommend also checking me out on your phone.
               </span>
-              !
+              
             </Alert>
           )}
 

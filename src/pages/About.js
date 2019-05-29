@@ -31,8 +31,6 @@ const h1Span = {
   color: "#444"
 };
 
-
-
 class About extends Component {
   state = {
     visible: true
@@ -77,9 +75,12 @@ class About extends Component {
               isOpen={this.state.visible}
               toggle={this.onDismiss}
             >
-            
-                Click me to to view a taste of my projects.
-              
+              <Link
+                to={"/client"}
+                style={{ textDecoration: "none", color: "#212121" }}
+              >
+                Cick me to to view a taste of my projects.
+              </Link>
             </Alert>
             <Row>
               <Jumbotron fluid style={{ background: "none" }}>
@@ -95,8 +96,8 @@ class About extends Component {
                     12 +
                   </h1>
                   <p className="lead">
-                    <h1 style={{ color: "#00b7ff" }}>PROJECTS COMPLETED</h1>
-                    I have completed over 12 projects including client side and
+                    <h1 style={{ color: "#00b7ff" }}>PROJECTS COMPLETED</h1>I
+                    have completed over 12 projects including client side and
                     server side. Creating full stack web applications, deployed
                     and ready for production.
                   </p>
