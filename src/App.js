@@ -34,8 +34,7 @@ class App extends Component {
       this.setState({ showInstallMessage: true });
       setTimeout(() => this.setState({ visible: true }), 6800);
     } else {
-        setTimeout(()=>this.setState({showPwaMessage:true}),6800)
-      
+      setTimeout(() => this.setState({ showPwaMessage: true }), 6800);
     }
   }
   onDismiss = () => {
@@ -58,10 +57,9 @@ class App extends Component {
               toggle={this.onDismissDesk}
             >
               <span style={{ paddingTop: "32px" }}>
-                
-                Hello desktop user! I recommend also checking me out on your phone.
+                Hello desktop user! I recommend also checking me out on your
+                phone.
               </span>
-              
             </Alert>
           )}
 
@@ -78,8 +76,7 @@ class App extends Component {
                 <h1>Install me </h1>
                 <p>
                   Install this application on your home screen for quick and
-                  easy access when you're on the go.
-                  I am a fully-fledged PWA
+                  easy access when you're on the go. I am a fully-fledged PWA
                 </p>
                 <span>
                   Just tap{" "}
