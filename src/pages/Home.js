@@ -28,6 +28,9 @@ const cardStyle = {
 };
 
 class Home extends Component {
+  state = {
+    window: window.innerWidth
+  };
   componentDidMount() {
     window.scrollTo(0, 0);
   }

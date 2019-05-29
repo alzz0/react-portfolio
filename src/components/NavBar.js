@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import "../css/App.css";
 import logo from "../images/alim.png";
 
 import {
@@ -30,7 +31,7 @@ class NavBar extends Component {
   render() {
     return (
       <div>
-        <Navbar
+        <Navbar id="navbar"
           color="light"
           light
           expand="md"
@@ -110,7 +111,11 @@ class NavBar extends Component {
                   </DropdownItem>
                   <DropdownItem divider />
                   <DropdownItem>
-                    <NavLink href="https://github.com/alzz0" target="_blank" rel="noopener">
+                    <NavLink
+                      href="https://github.com/alzz0"
+                      target="_blank"
+                      rel="noopener"
+                    >
                       GitHub
                     </NavLink>
                   </DropdownItem>
