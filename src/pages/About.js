@@ -79,7 +79,7 @@ class About extends Component {
                 to={"/client"}
                 style={{ textDecoration: "none", color: "#212121" }}
               >
-                Cick me to to view a taste of my projects.
+                Click me to to view a taste of my projects.
               </Link>
             </Alert>
             <Row>
