@@ -219,7 +219,7 @@ class Home extends Component {
                 <Zoom>
                   <div className="timeline-content">
                     <h3>The Big Move</h3>
-                    <span>1st Quarter of 2019</span>
+                    <span>1st and 2nd Quarter of 2019</span>
                     <p>
                       Started the new year by traveling to the other side of the
                       country to join the{" "}
@@ -234,7 +234,7 @@ class Home extends Component {
                       <span style={{ fontStyle: "italic" }}>Amazing team</span>
                       ). Taking on a big responsability by creating their
                       progessive web app mobile version and having it ready for
-                      production by May 31st
+                      production by June 15th
                     </p>
                   </div>
                 </Zoom>
@@ -245,7 +245,7 @@ class Home extends Component {
         <section3>
           <Link to={"/about"}>
             <div id="left">
-              <div id="box1">
+              <div className="box1 draw">
                 <h1>About Me</h1>
               </div>
             </div>

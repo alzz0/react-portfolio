@@ -11,6 +11,21 @@ aboutSection {
   height: 80vh;
 }
 
+.card {
+  text-align: left;
+padding:10px;
+  display: block !important;
+}
+.card:hover {
+  background-color:#E0E0E0;
+}
+.card h1 {
+  font-size: auto;
+  white-space: nowrap;
+}
+h5 {
+  font-size: 1rem !important;
+}
 aboutSection2 {
   width: 100%;
   padding: 0 7%;

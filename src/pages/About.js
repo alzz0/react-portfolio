@@ -108,6 +108,7 @@ class About extends Component {
         </aboutSection3>
         <aboutSection2>
           <Container>
+           <div style={{height:"20px"}} />
             <Row>
               <Col xs="12" sm="12" md="4">
                 <Card className="card" style={cardStyle}>
@@ -129,10 +130,11 @@ class About extends Component {
                 </Card>
               </Col>
               <Col xs="12" sm="12" md="4">
+                
                 <Card style={cardStyle}>
                   <CardTitle>
                     <h1 style={h1Style}>
-                      02. <span style={h1Span}>Design</span>
+                      02. <span style={h1Span}>Design </span>
                     </h1>
                   </CardTitle>
 
