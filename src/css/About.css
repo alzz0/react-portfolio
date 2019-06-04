@@ -13,11 +13,11 @@ aboutSection {
 
 .card {
   text-align: left;
-padding:10px;
+  padding: 10px;
   display: block !important;
 }
-.card:hover {
-  background-color:#E0E0E0;
+aboutSection2 .card:hover {
+  background-color: #e0e0e0;
 }
 .card h1 {
   font-size: auto;

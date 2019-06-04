@@ -10,3 +10,7 @@ workSection {
   background-position: 50% 50%;
   height: 30vh;
 }
+
+.card:hover {
+  background-color: none !important;
+}
