@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Alert } from "reactstrap";
+import GlitchEffect from "react-glitch-effect";
 
 import Typist from "react-typist";
 import { Link } from "react-router-dom";
@@ -51,7 +52,7 @@ class About extends Component {
               <Container fluid>
                 <h1 className="display-5">
                   {" "}
-                  Hello, my name is <Typist>Ali Mansour</Typist>
+                  Hello, my name is <GlitchEffect duration={"2s"}>Ali Mansour</GlitchEffect>
                 </h1>
 
                 <p className="lead">
@@ -108,7 +109,7 @@ class About extends Component {
         </aboutSection3>
         <aboutSection2>
           <Container>
-           <div style={{height:"20px"}} />
+            <div style={{ height: "20px" }} />
             <Row>
               <Col xs="12" sm="12" md="4">
                 <Card className="card" style={cardStyle}>
@@ -130,7 +131,6 @@ class About extends Component {
                 </Card>
               </Col>
               <Col xs="12" sm="12" md="4">
-                
                 <Card style={cardStyle}>
                   <CardTitle>
                     <h1 style={h1Style}>

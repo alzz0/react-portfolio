@@ -29,10 +29,12 @@ const cardStyle = {
 
 class Home extends Component {
   state = {
-    window: window.innerWidth
+    window: window.innerWidth,
+    name: "Ali Mansour"
   };
   componentDidMount() {
     window.scrollTo(0, 0);
+    
   }
 
   render() {
@@ -46,8 +48,8 @@ class Home extends Component {
                 <Typist>
                   <span>
                     Hello, my name is{" "}
-                    <span style={{ color: "#33c5ff" }}>Ali Mansour</span>. I am
-                    awesome.
+                    <span style={{ color: "#33c5ff" }}>{this.state.name}</span>.
+                    I am awesome.
                   </span>
                   <Typist.Backspace count={8} delay={200} />
                   <span>a Software Developer & Entrepreneur.</span>
