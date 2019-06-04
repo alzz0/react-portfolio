@@ -19,7 +19,8 @@ class App extends Component {
     visible: false
   };
 
-  componentDidMount() {
+componentDidMount() {
+    localStorage.setItem("visited",true)
     // Detects if device is on iOS
     const isIos = () => {
       const userAgent = window.navigator.userAgent.toLowerCase();
@@ -37,6 +38,11 @@ class App extends Component {
       setTimeout(() => this.setState({ showPwaMessage: true }), 6800);
     }
   }
+
+
+
+
+
   onDismiss = () => {
     this.setState({ visible: false });
   };
