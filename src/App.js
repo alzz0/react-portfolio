@@ -31,16 +31,22 @@ componentDidMount() {
       "standalone" in window.navigator && window.navigator.standalone;
 
     // Checks if should display install popup notification:
-     if (document.cookie.indexOf("popupShown=true") == -1) {
+    
+    if (isIos() && !isInStandaloneMode()) {
+         if (document.cookie.indexOf("popupShown=true") == -1) {
         document.cookie = "popupShown=true; max-age=172800"; // 86400: seconds in a day
         // set to 5 seconds just for testing
-    if (isIos() && !isInStandaloneMode()) {
       this.setState({ showInstallMessage: true });
+         }
       setTimeout(() => this.setState({ visible: true }), 6800);
     } else {
+         if (document.cookie.indexOf("popupDesktopShown=true") == -1) {
+        document.cookie = "popupDesktopShown=true; max-age=172800"; // 86400: seconds in a day
+        // set to 5 seconds just for testing
       setTimeout(() => this.setState({ showPwaMessage: true }), 6800);
+         }
     }
-     }
+     
   }
 
 
