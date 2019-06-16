@@ -34,7 +34,6 @@ class Home extends Component {
   };
   componentDidMount() {
     window.scrollTo(0, 0);
-    
   }
 
   render() {
@@ -126,8 +125,8 @@ class Home extends Component {
                   <CardTitle>Other Technologies</CardTitle>
                   <CardSubtitle>miscellaneous</CardSubtitle>
                   <CardText>
-                    Bootstrap, Materializecss, EJS, Semantic UI, Git, GitHub,
-                    HTML5, CSS3, NPM, Ajax, Scss.
+                    Jest(Unit testing), Bootstrap, Materializecss, EJS, Semantic
+                    UI, Git, GitHub, Axios, HTML5, CSS3, NPM, Ajax, Scss.
                   </CardText>
                 </CardBody>
               </Card>
