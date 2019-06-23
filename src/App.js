@@ -19,8 +19,19 @@ class App extends Component {
     visible: false
   };
 
-componentDidMount() {
-   
+  componentDidMount() {
+    let deferredPrompt;
+
+    window.addEventListener("beforeinstallprompt", e => {
+      // Prevent Chrome 67 and earlier from automatically showing the prompt
+      e.preventDefault();
+        deferredPrompt();
+        
+      // Stash the event so it can be triggered later.
+        
+      deferredPrompt = e;
+    });
+
     // Detects if device is on iOS
     const isIos = () => {
       const userAgent = window.navigator.userAgent.toLowerCase();
@@ -31,27 +42,22 @@ componentDidMount() {
       "standalone" in window.navigator && window.navigator.standalone;
 
     // Checks if should display install popup notification:
-    
+
     if (isIos() && !isInStandaloneMode()) {
-         if (document.cookie.indexOf("popupShown=true") == -1) {
+      if (document.cookie.indexOf("popupShown=true") == -1) {
         document.cookie = "popupShown=true; max-age=172800"; // 86400: seconds in a day
         // set to 5 seconds just for testing
-      this.setState({ showInstallMessage: true });
-         }
+        this.setState({ showInstallMessage: true });
+      }
       setTimeout(() => this.setState({ visible: true }), 6800);
     } else {
-         if (document.cookie.indexOf("popupDesktopShown=true") == -1) {
+      if (document.cookie.indexOf("popupDesktopShown=true") == -1) {
         document.cookie = "popupDesktopShown=true; max-age=172800"; // 86400: seconds in a day
         // set to 5 seconds just for testing
-      setTimeout(() => this.setState({ showPwaMessage: true }), 6800);
-         }
+        setTimeout(() => this.setState({ showPwaMessage: true }), 6800);
+      }
     }
-     
   }
-
-
-
-
 
   onDismiss = () => {
     this.setState({ visible: false });
