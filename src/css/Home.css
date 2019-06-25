@@ -175,14 +175,14 @@ h1 span {
 
 .timeline-content span {
   font-size: 15px;
-  color: #363637;
+  color: #a4a4a4;
 }
 
 .timeline-content p {
   font-size: 14px;
   line-height: 1.5em;
   word-spacing: 1px;
-  color: #363637;
+  color: #888;
 }
 
 @media screen and (max-width: 768px) {
@@ -252,14 +252,14 @@ h1 span {
   height: 100%;
 }
 .draw:hover::before {
-  border-top-color: #e0e0e0;
-  border-right-color: #e0e0e0;
+  border-top-color:#E0E0E0;
+  border-right-color:#E0E0E0;
   -webkit-transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
   transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
 }
 .draw:hover::after {
-  border-bottom-color: #e0e0e0;
-  border-left-color: #e0e0e0;
+  border-bottom-color: #E0E0E0;
+  border-left-color:#E0E0E0;
   -webkit-transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s,
     height 0.25s ease-out 0.75s;
   transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s,
