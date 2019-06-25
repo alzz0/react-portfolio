@@ -140,7 +140,10 @@ class Contact extends Component {
                         rel="noopener noreferrer"
                         target="_blank"
                       >
-                        <Button style={{ backgroundColor: "#1DA1F2" }}>
+                        <Button
+                          role="button"
+                          style={{ backgroundColor: "#1DA1F2" }}
+                        >
                           Take me there!
                         </Button>
                       </a>
@@ -160,7 +163,7 @@ class Contact extends Component {
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        <Button style={{ backgroundColor: "#0077B5" }}>
+                        <Button  role="button" style={{ backgroundColor: "#0077B5" }}>
                           Take me there!
                         </Button>
                       </a>

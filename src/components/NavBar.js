@@ -31,7 +31,8 @@ class NavBar extends Component {
   render() {
     return (
       <div>
-        <Navbar id="navbar"
+        <Navbar
+          id="navbar"
           color="light"
           light
           expand="md"
@@ -49,7 +50,12 @@ class NavBar extends Component {
               <img src={logo} alt="logo" />
             </Link>
           </NavbarBrand>
-          <NavbarToggler onClick={this.toggle} />
+          <NavbarToggler
+            type="submit"
+            role="button"
+            aria-hidden="true"
+            onClick={this.toggle}
+          />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>

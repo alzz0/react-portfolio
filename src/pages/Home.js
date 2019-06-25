@@ -5,6 +5,7 @@ import jslogo from "../images/jslogo.png";
 import reactlogo from "../images/reactlogo.png";
 import reduxlogo from "../images/reduxlogo.png";
 import { Link } from "react-router-dom";
+import downarrow from "../images/downarrow.png";
 import Typist from "react-typist";
 
 import {
@@ -58,8 +59,8 @@ class Home extends Component {
                 <Fade right>
                   <div style={{ paddingTop: "20vh" }}>
                     <img
-                      style={{ width: "30px" }}
-                      src="http://driesvanbroeck.be/wp-content/themes/driesvanbroeck/assets/content/scroll.svg"
+                      style={{ width: "50px", opacity: "0.5" }}
+                      src={downarrow}
                       alt="web developer"
                     />
 
@@ -225,6 +226,7 @@ class Home extends Component {
                       Started the new year by traveling to the other side of the
                       country to join the{" "}
                       <a
+                        style={{ color: "#000058" }}
                         href="https://www.tranquility.app/"
                         target="_blank"
                         rel="noopener noreferrer"
