@@ -237,7 +237,7 @@ class Home extends Component {
                       <span style={{ fontStyle: "italic" }}>Amazing team</span>
                       ). Taking on a big responsability by creating their
                       progessive web app mobile version and having it ready for
-                      production by June 15th
+                      production by July 15th
                     </p>
                   </div>
                 </Zoom>
