@@ -100,9 +100,9 @@ class ClientWork extends Component {
                           Athletes Clothing Ecommerce
                         </CardTitle>
                         <CardText style={cardText}>
-                          Shop for you favorite clothing powered by Javascript,
-                          React.js, Redux, and Firebase. Seemlessly sign up and
-                          Login with Google and securly and safely pay with
+                          Shop for your favorite clothing powered by Javascript,
+                          React.js, Redux, and Firebase. Seamlessly sign up and
+                          login with Google and securly and safely pay with
                           Stripe.
                         </CardText>
                       </div>
