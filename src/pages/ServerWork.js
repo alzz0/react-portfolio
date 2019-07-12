@@ -5,6 +5,8 @@ import gymImage from "../images/gym.jpeg";
 import twitterImage from "../images/twitter1.png";
 import todoImage from "../images/todo.jpg";
 import planImage from "../images/plan.png";
+import eComImage from "../images/ecom.jpg";
+
 import "../css/Work.css";
 import {
   Card,
@@ -69,6 +71,37 @@ class ServerWork extends Component {
                           Full stack web app using React.js, Redux on the client
                           side and Firebase DB, Firebase Auth, Cloud Functions
                           on server side.
+                        </CardText>
+                      </div>
+                    </CardImgOverlay>
+                  </Card>
+                </Pulse>
+              </a>
+            </Col>
+
+            <Col xs="12" sm="6" lg="4">
+              <a
+                href="https://athletes-clothing.herokuapp.com/"
+                target="_blank>"
+              >
+                <Pulse>
+                  <Card style={{ border: "none" }}>
+                    <CardImg
+                      style={imgStyle}
+                      width="100%"
+                      src={eComImage}
+                      alt="Card image cap"
+                    />
+                    <CardImgOverlay>
+                      <div style={backgroundStyle}>
+                        <CardTitle style={cardText}>
+                          Athletes Clothing Ecommerce
+                        </CardTitle>
+                        <CardText style={cardText}>
+                          Shop for you favorite clothing powered by Javascript,
+                          React.js, Redux, and Firebase. Seemlessly sign up and
+                          Login with Google and securly and safely pay with
+                          Stripe.
                         </CardText>
                       </div>
                     </CardImgOverlay>
