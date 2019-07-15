@@ -5,8 +5,22 @@ self.addEventListener("install", evt => {
 });
 
 // active service worker
-self.addEventListener("activate", evt => {
-  console.log("service worker has been actived");
+self.addEventListener("activate", function(event) {
+  event.waitUntil(
+    caches.keys().then(function(cacheNames) {
+      return Promise.all(
+        cacheNames
+          .filter(function(cacheName) {
+            // Return true if you want to remove this cache,
+            // but remember that caches are shared across
+            // the whole origin
+          })
+          .map(function(cacheName) {
+            return caches.delete(cacheName);
+          })
+      );
+    })
+  );
 });
 
 self.addEventListener("fetch", evt => {
