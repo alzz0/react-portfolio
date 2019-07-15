@@ -205,8 +205,8 @@ class ClientWork extends Component {
                       <div style={backgroundStyle}>
                         <CardTitle style={cardText}>React Weaher App</CardTitle>
                         <CardText style={cardText}>
-                          Weather App connected to an Api bringing you your
-                          currenct weather information.
+                          Weather application connected to an Api bringing you
+                          your currenct weather information.
                         </CardText>
                       </div>
                     </CardImgOverlay>
