@@ -242,6 +242,29 @@ class Home extends Component {
                   </div>
                 </Zoom>
               </div>
+
+              <div className="timeline-block timeline-block-right">
+                <div className="marker" />
+                <Zoom>
+                  <div className="timeline-content">
+                    <h3>Milestone</h3>
+                    <span>August 2019</span>
+                    <p>
+                      Honoured to be taking a new role as a Full Stack Developer
+                      at{" "}
+                      <a
+                        style={{ color: "#000058" }}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://www.r3mote.io/"
+                      >
+                        R3mote.io
+                      </a>{" "}
+                      after a very successful year with Tranquility Online.
+                    </p>
+                  </div>
+                </Zoom>
+              </div>
             </div>
           </Container>
         </section2>
