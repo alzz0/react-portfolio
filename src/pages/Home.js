@@ -259,7 +259,7 @@ class Home extends Component {
                         href="https://www.r3mote.io/"
                       >
                         R3mote.io
-                      </a>{" "}
+                      </a>{" "} in the beautiful city of Calgary
                       after a very successful year with Tranquility Online.
                     </p>
                   </div>
