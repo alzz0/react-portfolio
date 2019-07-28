@@ -15,22 +15,28 @@ if ("function" === typeof importScripts) {
     });
     // install service worker
 
-   self.addEventListener('install', function (e) {
-    console.log('[Service Worker] Install');
-    e.waitUntil(
-      caches.open(dataCacheName).then(function (cache) {
-          console.log('[Service Worker] Caching app shell');
-          return cache.addAll(filesToCache);
-      }).then(function(e){
-        return self.skipWaiting();
-      })
-    );
-});
+    self.addEventListener("install", evt => {
+      console.log("service worker installed");
+    });
 
     // active service worker
-    self.addEventListener("activate", evt => {
-      console.log("service worker has been actived");
-    });
+   const cacheName = ['jiah-static-v2'];
+
+self.addEventListener('activate', (e) => {
+    console.log('[Service Worker] Activated');
+    e.waitUntil(
+        caches.keys().then(cacheNames => {
+            return Promise.all(
+                cacheNames.map(thisCacheName => {
+                    if (!cacheName.includes(thisCacheName)) {
+                        console.log(`[Service Worker] Removing Cached Files from Cach-${thisCacheName}`);
+                        return caches.delete(thisCacheName);
+                    }
+                })
+            );
+        })
+    );
+});
 
     self.addEventListener("fetch", evt => {
       console.log("Fetch", evt);
