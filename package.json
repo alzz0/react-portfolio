@@ -17,7 +17,7 @@
     "reactstrap": "^6.4.0"
   },
   "scripts": {
-    "start": "PORT=3006 react-scripts start",
+    "start": "react-scripts start",
     "build": "react-scripts build && npm run build-sw",
     "build-sw": "node ./src/sw-build.js",
     "test": "react-scripts test --env=jsdom",

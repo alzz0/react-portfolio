@@ -78,7 +78,7 @@ class Contact extends Component {
                 </NavLink>
               </NavItem>
 
-              <NavItem>
+              <NavItem id="disabled">
                 <NavLink
                   style={tabStyle}
                   className={classnames({
@@ -118,7 +118,7 @@ class Contact extends Component {
               <TabPane tabId="3">
                 <Row>
                   <Col sm="12">
-                    <h4 style={{ color: "#00b7ff" }}>(780)-680-2356</h4>
+                    <h4 style={{ color: "#00b7ff" }}>(***)-***-****</h4>
                   </Col>
                 </Row>
               </TabPane>
@@ -163,7 +163,10 @@ class Contact extends Component {
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        <Button  role="button" style={{ backgroundColor: "#0077B5" }}>
+                        <Button
+                          role="button"
+                          style={{ backgroundColor: "#0077B5" }}
+                        >
                           Take me there!
                         </Button>
                       </a>

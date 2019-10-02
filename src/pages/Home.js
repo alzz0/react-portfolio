@@ -107,7 +107,8 @@ class Home extends Component {
                   <CardTitle>Server Side</CardTitle>
                   <CardSubtitle>Node.js</CardSubtitle>
                   <CardText>
-                    Node.js, Express.js, MongoDB, Mongoose, Firebase.
+                    Node.js, Express.js, Django, Python, MongoDB, Mongoose,
+                    Firebase.
                   </CardText>
                 </CardBody>
               </Card>
@@ -127,7 +128,7 @@ class Home extends Component {
                   <CardSubtitle>miscellaneous</CardSubtitle>
                   <CardText>
                     Jest(Unit testing), Bootstrap, Materializecss, EJS, Semantic
-                    UI, Git, GitHub, Axios, HTML5, CSS3, NPM, Ajax, Scss.
+                    UI, Git, GitHub, Axios, HTML5, CSS3, NPM, Pip, Scss.
                   </CardText>
                 </CardBody>
               </Card>
@@ -259,8 +260,9 @@ class Home extends Component {
                         href="https://www.r3mote.io/"
                       >
                         R3mote.io
-                      </a>{" "} in the beautiful city of Calgary
-                      after a very successful year with Tranquility Online.
+                      </a>{" "}
+                      in the beautiful city of Calgary after a very successful
+                      year with Tranquility Online.
                     </p>
                   </div>
                 </Zoom>
