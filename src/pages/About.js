@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { Alert } from "reactstrap";
 import GlitchEffect from "react-glitch-effect";
 
-import Typist from "react-typist";
 import { Link } from "react-router-dom";
 import {
   Jumbotron,

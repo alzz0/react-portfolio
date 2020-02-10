@@ -25,10 +25,10 @@ class App extends Component {
     window.addEventListener("beforeinstallprompt", e => {
       // Prevent Chrome 67 and earlier from automatically showing the prompt
       e.preventDefault();
-        deferredPrompt();
-        
+      deferredPrompt();
+
       // Stash the event so it can be triggered later.
-        
+
       deferredPrompt = e;
     });
 
@@ -44,14 +44,14 @@ class App extends Component {
     // Checks if should display install popup notification:
 
     if (isIos() && !isInStandaloneMode()) {
-      if (document.cookie.indexOf("popupShown=true") == -1) {
+      if (document.cookie.indexOf("popupShown=true") === -1) {
         document.cookie = "popupShown=true; max-age=172800"; // 86400: seconds in a day
         // set to 5 seconds just for testing
         this.setState({ showInstallMessage: true });
       }
       setTimeout(() => this.setState({ visible: true }), 6800);
     } else {
-      if (document.cookie.indexOf("popupDesktopShown=true") == -1) {
+      if (document.cookie.indexOf("popupDesktopShown=true") === -1) {
         document.cookie = "popupDesktopShown=true; max-age=172800"; // 86400: seconds in a day
         // set to 5 seconds just for testing
         setTimeout(() => this.setState({ showPwaMessage: true }), 6800);

@@ -32,7 +32,7 @@ function Home({ ...props }) {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-  const [name, setName] = useState("Ali Mansour");
+  const [name] = useState("Ali Mansour");
   // const [window, setWindow] = useState(window.innerWidth);
   return (
     <div>
