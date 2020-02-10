@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { useState, useEffect } from "react";
 import Home from "./pages/Home";
 import ClientWork from "./pages/ClientWork";
 import ServerWork from "./pages/ServerWork";
@@ -12,14 +12,12 @@ import upload from "./images/upload.png";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import "./css/App.css";
 
-class App extends Component {
-  state = {
-    showInstallMessage: false,
-    showPwaMessage: false,
-    visible: false
-  };
+function App() {
+  const [showInstallMessage, setShowInstallMessage] = useState(false);
+  const [showPwaMessage, setShowPwaMessage] = useState(false);
+  const [visible, setVisible] = useState(false);
 
-  componentDidMount() {
+  useEffect(() => {
     let deferredPrompt;
 
     window.addEventListener("beforeinstallprompt", e => {
@@ -47,89 +45,86 @@ class App extends Component {
       if (document.cookie.indexOf("popupShown=true") === -1) {
         document.cookie = "popupShown=true; max-age=172800"; // 86400: seconds in a day
         // set to 5 seconds just for testing
-        this.setState({ showInstallMessage: true });
+        // this.setState({ showInstallMessage: true });
+        setShowInstallMessage(true);
       }
-      setTimeout(() => this.setState({ visible: true }), 6800);
+      // setTimeout(() => this.setState({ visible: true }), 6800);
+      setTimeout(() => setVisible(true), 6800);
     } else {
       if (document.cookie.indexOf("popupDesktopShown=true") === -1) {
         document.cookie = "popupDesktopShown=true; max-age=172800"; // 86400: seconds in a day
         // set to 5 seconds just for testing
-        setTimeout(() => this.setState({ showPwaMessage: true }), 6800);
+        // setTimeout(() => this.setState({ showPwaMessage: true }), 6800);
+        setTimeout(() => setShowPwaMessage(true), 6800);
       }
     }
+  }, []);
+
+  function onDismiss() {
+    setVisible(false);
   }
 
-  onDismiss = () => {
-    this.setState({ visible: false });
-  };
+  function onDismissDesk() {
+    setShowPwaMessage(false);
+  }
 
-  onDismissDesk = () => {
-    this.setState({ showPwaMessage: false });
-  };
+  return (
+    <Router>
+      <div>
+        {showPwaMessage && window.innerWidth > 450 && (
+          <Alert
+            id="pwaDesktopAlert"
+            color="info"
+            isOpen={showPwaMessage}
+            toggle={onDismissDesk}
+          >
+            <span style={{ paddingTop: "32px" }}>
+              Hello desktop user! I recommend also checking me out on your
+              phone.
+            </span>
+          </Alert>
+        )}
 
-  render() {
-    return (
-      <Router>
-        <div>
-          {this.state.showPwaMessage && window.innerWidth > 450 && (
+        {showInstallMessage && (
+          <div id="pwaAlert">
             <Alert
-              id="pwaDesktopAlert"
+              id="alertText"
+              style={{ margin: "0", textAlign: "center" }}
               color="info"
-              isOpen={this.state.showPwaMessage}
-              toggle={this.onDismissDesk}
+              isOpen={visible}
+              toggle={onDismiss}
             >
-              <span style={{ paddingTop: "32px" }}>
-                Hello desktop user! I recommend also checking me out on your
-                phone.
+              {" "}
+              <h1>Install me </h1>
+              <p>
+                Install this application on your home screen for quick and easy
+                access when you're on the go. I am a fully-fledged PWA
+              </p>
+              <span>
+                Just tap{" "}
+                <img
+                  style={{ marginLeft: "3px", marginRight: "3px" }}
+                  width="25px"
+                  src={upload}
+                  alt="install pwa"
+                />
+                then "Add to Home Screen
               </span>
             </Alert>
-          )}
+          </div>
+        )}
 
-          {this.state.showInstallMessage && (
-            <div id="pwaAlert">
-              <Alert
-                id="alertText"
-                style={{ margin: "0", textAlign: "center" }}
-                color="info"
-                isOpen={this.state.visible}
-                toggle={this.onDismiss}
-              >
-                {" "}
-                <h1>Install me </h1>
-                <p>
-                  Install this application on your home screen for quick and
-                  easy access when you're on the go. I am a fully-fledged PWA
-                </p>
-                <span>
-                  Just tap{" "}
-                  <img
-                    style={{ marginLeft: "3px", marginRight: "3px" }}
-                    width="25px"
-                    src={upload}
-                    alt="install pwa"
-                  />
-                  then "Add to Home Screen
-                </span>
-              </Alert>
-            </div>
-          )}
+        <Navbar />
 
-          <Navbar />
-
-          <Route
-            exact
-            path="/"
-            render={props => <Home pwaAlert={this.state.visible} />}
-          />
-          <Route path="/about" component={About} />
-          <Route path="/contact" component={Contact} />
-          <Route path="/client" component={ClientWork} />
-          <Route path="/server" component={ServerWork} />
-          <Footer />
-        </div>
-      </Router>
-    );
-  }
+        <Route exact path="/" render={props => <Home pwaAlert={visible} />} />
+        <Route path="/about" component={About} />
+        <Route path="/contact" component={Contact} />
+        <Route path="/client" component={ClientWork} />
+        <Route path="/server" component={ServerWork} />
+        <Footer />
+      </div>
+    </Router>
+  );
 }
 
 export default App;

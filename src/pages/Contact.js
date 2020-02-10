@@ -49,7 +49,9 @@ function Contact() {
     <div>
       <contactSection>
         <Jumbotron style={contactStyle}>
-          <h1 className="display-5">LET’S COLLABORTE OR SOCIALIZE</h1>
+          <h1 className="display-5" style={{ color: "#fff" }}>
+            LET’S COLLABORTE OR SOCIALIZE
+          </h1>
           <p className="lead">
             If you would like to get in touch, talk to me about a project
             collaboration or just say hi you can...

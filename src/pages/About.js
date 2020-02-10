@@ -48,7 +48,7 @@ function About() {
         <div id="aboutHeader">
           <Jumbotron fluid style={{ backgroundColor: "#2f2f2f" }}>
             <Container fluid>
-              <h1 className="display-5">
+              <h1 className="display-5" style={{ color: "#fff" }}>
                 {" "}
                 Hello, my name is{" "}
                 <GlitchEffect duration={"2s"}>Ali Mansour</GlitchEffect>
