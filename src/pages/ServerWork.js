@@ -1,13 +1,13 @@
-import React, { useEffect } from 'react';
-import Pulse from 'react-reveal/Pulse';
-import WorkFooter from '../components/WorkFooter';
-import gymImage from '../images/gym.jpeg';
-import twitterImage from '../images/twitter1.png';
-import todoImage from '../images/todo.jpg';
-import planImage from '../images/plan.png';
-import eComImage from '../images/ecom.jpg';
+import React, { useEffect } from "react";
+import Pulse from "react-reveal/Pulse";
+import WorkFooter from "../components/WorkFooter";
+import gymImage from "../images/gym.jpeg";
+import twitterImage from "../images/twitter1.png";
+import todoImage from "../images/todo.jpg";
+import planImage from "../images/plan.png";
+import eComImage from "../images/ecom.jpg";
 
-import '../css/Work.css';
+import "../css/Work.css";
 import {
   Card,
   Jumbotron,
@@ -18,18 +18,18 @@ import {
   Container,
   Row,
   Col,
-} from 'reactstrap';
+} from "reactstrap";
 
 const imgStyle = {
-  height: '348px',
-  padding: '10px',
+  height: "348px",
+  padding: "10px",
 };
 const cardText = {
-  color: 'white',
-  textAlign: 'center',
+  color: "white",
+  textAlign: "center",
 };
 const backgroundStyle = {
-  backgroundColor: 'rgba(0, 0, 0, 0.7)',
+  backgroundColor: "rgba(0, 0, 0, 0.7)",
 };
 
 function ServerWork() {
@@ -40,10 +40,10 @@ function ServerWork() {
   return (
     <div>
       <workSection>
-        <Jumbotron fluid style={{ background: 'none' }}>
+        <Jumbotron fluid style={{ background: "none" }}>
           <Container fluid>
-            <h1 className='display-3'>A taste of my Server Side Work.</h1>
-            <p className='lead' style={{ textAlign: 'center' }}>
+            <h1 className="display-3">A taste of my Server Side Work.</h1>
+            <p className="lead" style={{ textAlign: "center" }}>
               Click or tap a project to see more.
             </p>
           </Container>
@@ -52,17 +52,17 @@ function ServerWork() {
 
       <Container>
         <Row>
-          <Col xs='12' sm='6' lg='4'>
-            <a href='https://www.easygame.ca/' target='_blank>'>
+          <Col xs="12" sm="6" lg="4">
+            <a href="https://www.easygame.ca/" target="_blank>">
               <Pulse>
-                <Card style={{ border: 'none' }}>
+                <Card style={{ border: "none" }}>
                   <CardImg
                     body
                     inverse
                     style={imgStyle}
-                    width='100%'
+                    width="100%"
                     src={planImage}
-                    alt='Card image cap'
+                    alt="Card image cap"
                   />
                   <CardImgOverlay>
                     <div style={backgroundStyle}>
@@ -81,15 +81,15 @@ function ServerWork() {
             </a>
           </Col>
 
-          <Col xs='12' sm='6' lg='4'>
-            <a href='https://athletes-clothing.herokuapp.com/' target='_blank>'>
+          <Col xs="12" sm="6" lg="4">
+            <a href="https://athletes-clothing.herokuapp.com/" target="_blank>">
               <Pulse>
-                <Card style={{ border: 'none' }}>
+                <Card style={{ border: "none" }}>
                   <CardImg
                     style={imgStyle}
-                    width='100%'
+                    width="100%"
                     src={eComImage}
-                    alt='Card image cap'
+                    alt="Card image cap"
                   />
                   <CardImgOverlay>
                     <div style={backgroundStyle}>
@@ -109,20 +109,20 @@ function ServerWork() {
             </a>
           </Col>
 
-          <Col xs='12' sm='6' lg='4'>
+          <Col xs="12" sm="6" lg="4">
             <a
-              href='https://newappnamegymconfessions.herokuapp.com/'
-              target='_blank>'
+              href="https://newappnamegymconfessions.herokuapp.com/"
+              target="_blank>"
             >
               <Pulse>
-                <Card style={{ border: 'none' }}>
+                <Card style={{ border: "none" }}>
                   <CardImg
                     body
                     inverse
                     style={imgStyle}
-                    width='100%'
+                    width="100%"
                     src={gymImage}
-                    alt='Card image cap'
+                    alt="Card image cap"
                   />
                   <CardImgOverlay>
                     <div style={backgroundStyle}>
@@ -130,25 +130,25 @@ function ServerWork() {
                       <CardText style={cardText}>
                         Full stack web app with Authentication and
                         authorization.
-                      </CardText>{' '}
+                      </CardText>{" "}
                     </div>
                   </CardImgOverlay>
                 </Card>
               </Pulse>
             </a>
           </Col>
-          <Col xs='12' sm='6' lg='4'>
+          <Col xs="12" sm="6" lg="4">
             <a
-              href='https://github.com/alzz0/Vogelkop-twitter-clone'
-              target='_blank>'
+              href="https://github.com/alzz0/Vogelkop-twitter-clone"
+              target="_blank>"
             >
               <Pulse>
-                <Card style={{ border: 'none' }}>
+                <Card style={{ border: "none" }}>
                   <CardImg
                     style={imgStyle}
-                    width='100%'
+                    width="100%"
                     src={twitterImage}
-                    alt='Card image cap'
+                    alt="Card image cap"
                   />
                   <CardImgOverlay>
                     <div style={backgroundStyle}>
@@ -166,11 +166,11 @@ function ServerWork() {
             </a>
           </Col>
 
-          <Col xs='12' sm='6' lg='4'>
-            <a href='https://github.com/alzz0/mern-api-todo' target='_blank>'>
+          <Col xs="12" sm="6" lg="4">
+            <a href="https://github.com/alzz0/mern-api-todo" target="_blank>">
               <Pulse>
-                <Card style={{ border: 'none' }}>
-                  <CardImg style={imgStyle} width='100%' src={todoImage} />
+                <Card style={{ border: "none" }}>
+                  <CardImg style={imgStyle} width="100%" src={todoImage} />
                   <CardImgOverlay>
                     <div style={backgroundStyle}>
                       <CardTitle style={cardText}>React Todo App</CardTitle>

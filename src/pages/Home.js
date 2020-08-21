@@ -17,7 +17,7 @@ import {
   CardText,
   CardBody,
   CardTitle,
-  CardSubtitle
+  CardSubtitle,
 } from "reactstrap";
 import "../css/Home.css";
 
@@ -25,7 +25,7 @@ const cardStyle = {
   border: "none",
   maxWidth: "200px",
   textAlign: "center",
-  margin: "0 auto"
+  margin: "0 auto",
 };
 
 function Home({ ...props }) {
@@ -74,7 +74,7 @@ function Home({ ...props }) {
             margin: "120px auto",
             fontSize: "52px",
             fontWeight: "700",
-            letterSpacing: "2px"
+            letterSpacing: "2px",
           }}
         >
           Skills
@@ -259,6 +259,27 @@ function Home({ ...props }) {
                     </a>{" "}
                     in the beautiful city of Calgary after a very successful
                     year with Tranquility Online.
+                  </p>
+                </div>
+              </Zoom>
+            </div>
+            <div className="timeline-block timeline-block-left">
+              <div className="marker" />
+              <Zoom>
+                <div className="timeline-content">
+                  <h3>Kidoodle TV</h3>
+                  <span>August 2020</span>
+                  <p>
+                    Staying in the beautiful city of Calgary, I am Honoured to
+                    take on a big developer role at{" "}
+                    <a
+                      style={{ color: "#000058" }}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://kidoodle.tv/"
+                    >
+                      KidoodleTV
+                    </a>{" "}
                   </p>
                 </div>
               </Zoom>
